@@ -220,8 +220,8 @@ body {
 }
 </style>
 
-To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
-Example
+<!-- To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
+Example -->
 <style>
 body {
   background-image: url('example_img_girl.jpg');
@@ -229,12 +229,11 @@ body {
 }
 </style>
 
-Background Cover
+<!-- Background Cover
 If you want the background image to cover the entire element, you can set the background-size property to cover.
 Also, to make sure the entire element is always covered, set the background-attachment property to fixed:
 This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions):
-Example
-
+Example -->
 <style>
 body {
   background-image: url('img_girl.jpg');
@@ -244,10 +243,9 @@ body {
 }
 </style>
 
-Background Stretch
+<!-- Background Stretch
 If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%:
-Example
-
+Example -->
 <style>
 body {
   background-image: url('img_girl.jpg');
@@ -257,22 +255,21 @@ body {
 }
 </style>
 
-HTML <picture> Element
+<!-- HTML <picture> Element
 The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
 The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
 Each <source> element has a media attribute that defines when the image is the most suitable.
-Example
-
+Example -->
 <picture>
   <source media="(min-width: 650px)" srcset="img_food.jpg">
   <source media="(min-width: 465px)" srcset="img_car.jpg">
   <img src="img_girl.jpg">
 </picture>
 
-Note: Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match.
+<!-- Note: Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match. -->
 
-When to use the Picture Element
-There are two main purposes for the <picture> element:
+<!-- When to use the Picture Element
+There are two main purposes for the <picture> element: -->
 
 1. Bandwidth
 If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
