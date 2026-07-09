@@ -34,12 +34,11 @@ Everything between <td> and </td> is the content of a table cell. -->
   </tr>
 </table>
 
-Table Rows
+<!-- Table Rows
 Each table row starts with a <tr> and ends with a </tr> tag.
+tr stands for table row. -->
 
-tr stands for table row.
-
-Example
+<!-- Example -->
 <table>
   <tr>
     <td>Emil</td>
@@ -52,13 +51,9 @@ Example
     <td>10</td>
   </tr>
 </table>
-You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.
-
-Note: There are times when a row can have fewer or more cells than another. You will learn about that in a later chapter.
 
 Table Headers
 Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
-
 th stands for table header.
 
 Example
@@ -81,57 +76,29 @@ Let the first row be table header cells:
     <td>10</td>
   </tr>
 </table>
-By default, the text in <th> elements are bold and centered, but you can change that with CSS.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   
 HTML Table Borders
-HTML tables can have borders of different styles and shapes.
-
-How To Add a Border
 To add a border, use the CSS border property on table, th, and td elements:
-
- 	 	 
- 	 	 
  	 	 
 Example
 table, th, td {
   border: 1px solid black;
 }
-Collapsed Table Borders
-To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.
 
+Collapsed Table Borders
 This will make the borders collapse into a single border:
 
- 	 	 
- 	 	 
- 	 	 
 Example
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-REMOVE ADS
 
 Style Table Borders
 If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border:
 
- 	 	 
- 	 	 
- 	 	 
 Example
 table, th, td {
   border: 1px solid white;
@@ -140,57 +107,29 @@ table, th, td {
 th, td {
   background-color: #96D4D4;
 }
+
 Round Table Borders
 With the border-radius property, the borders get rounded corners:
-
- 	 	 
- 	 	 
- 	 	 
 Example
-table, th, td {
+
+  table, th, td {
   border: 1px solid black;
   border-radius: 10px;
 }
-Skip the border around the table by leaving out table from the css selector:
-
- 	 	 
- 	 	 
  	 	 
 Example
 th, td {
   border: 1px solid black;
   border-radius: 10px;
 }
-REMOVE ADS
 
 Dotted Table Borders
-With the border-style property, you can set the appearance of the border.
-
- 	 	 
- 	 	 
- 	 	 
-The following values are allowed:
-
-dotted     
-dashed     
-solid     
-double     
-groove     
-ridge     
-inset     
-outset     
-none     
-hidden     
 Example
  th, td {
   border-style: dotted;
 }
+  
 Border Color
-With the border-color property, you can set the color of the border.
-
- 	 	 
- 	 	 
- 	 	 
 Example
  th, td {
   border-color: #96D4D4;
@@ -198,32 +137,10 @@ Example
 
 
 
-
-
-
-
-
-
-
-
 HTML Table Sizes
-HTML tables can have different sizes for each column, row or the entire table.
-
- 	 	 
- 	 	 
- 	 	 
- 	 	 
- 	 	 
- 	 	 
- 	 	 
- 	 	 
-Use the style attribute with the width or height properties to specify the size of a table, row or column.
-
 HTML Table Width
 To set the width of a table, add the style attribute to the <table> element:
-
 Example
-Set the width of the table to 100%:
 
 <table style="width:100%">
   <tr>
@@ -242,14 +159,9 @@ Set the width of the table to 100%:
     <td>94</td>
   </tr>
 </table>
-Note: Using a percentage as the size unit for a width means how wide will this element be compared to its parent element, which in this case is the <body> element.
 
 HTML Table Column Width
- 	 	 
- 	 	 
- 	 	 
 To set the size of a specific column, add the style attribute on a <th> or <td> element:
-
 Example
 Set the width of the first column to 70%:
 
@@ -270,14 +182,9 @@ Set the width of the first column to 70%:
     <td>94</td>
   </tr>
 </table>
-REMOVE ADS
 
 HTML Table Row Height
- 	 	 
- 	 	 
- 	 	 
 To set the height of a specific row, add the style attribute on a table row element:
-
 Example
 Set the height of the second row to 200 pixels:
 
